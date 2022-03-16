@@ -1,0 +1,38 @@
+{
+  "name": "semanajsexpert-spotify-template",
+  "version": "1.0.0",
+  "description": "Seja bem vindo(a) à sexta Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warinings' jest --no-cache",
+    "test:watch": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warinings' jest --no-cache --watchAll",
+    "test:coverage": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warinings' jest --no-cache --coverage tests/unit",
+
+    "live-reload:docker": "docker-compose up live-reload"
+  },
+  "engines": {
+    "node": "17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickWendel/semanajsexpert-spotify-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErickWendel/semanajsexpert-spotify-template/issues"
+  },
+  "homepage": "https://github.com/ErickWendel/semanajsexpert-spotify-template#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "pino": "^7.8.0",
+    "pino-pretty": "^7.5.3"
+  }
+}
