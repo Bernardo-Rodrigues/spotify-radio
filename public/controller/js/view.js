@@ -41,7 +41,7 @@ export default class View{
         this.changeCommandBtnsVisibility(false)
 
         this.buttons()
-        .filter(btn => this.notIsUnnasignedButton(btn))
+        .filter(btn => this.notIsUnassignedButton(btn))
         .forEach(this.setupBtnAction.bind(this))
     }
 
@@ -92,7 +92,7 @@ export default class View{
         return this.onBtnClick(innerText)
     }
 
-    notIsUnnasignedButton(btn){
+    notIsUnassignedButton(btn){
         const classes = Array.from(btn.classList)
 
        return  !(!!classes.find(item => this.ignoreButtons.has(item)))

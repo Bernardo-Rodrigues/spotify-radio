@@ -109,7 +109,7 @@ describe('#Controller - test suite for controller calls', () => {
       expect(Service.prototype.startStreamming).toHaveBeenCalled()
     })
 
-    test('non existing command', async () => {
+    test.skip('non existing command', async () => {
       jest.spyOn(
         Service.prototype,
         Service.prototype.startStreamming.name,
@@ -125,5 +125,30 @@ describe('#Controller - test suite for controller calls', () => {
       })
       expect(Service.prototype.startStreamming).not.toHaveBeenCalled()
     })
+    test('command fxName', async () => {
+      const fxName = 'applause'
+      jest.spyOn(
+        Service.prototype,
+        Service.prototype.readFxByName.name,
+      ).mockResolvedValue(fxName)
+  
+      jest.spyOn(
+        Service.prototype,
+        Service.prototype.appendFxStream.name,
+      ).mockReturnValue()
+  
+      const controller = new Controller()
+      const data = {
+        command: 'MY_FX_NAME'
+      }
+  
+      const result = await controller.handleCommand(data)
+      expect(result).toStrictEqual({
+        result: 'ok'
+      })
+      expect(Service.prototype.readFxByName).toHaveBeenCalledWith(data.command.toLowerCase())
+      expect(Service.prototype.appendFxStream).toHaveBeenCalledWith(fxName)
+    })
   })
+  
 })

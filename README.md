@@ -11,8 +11,8 @@ Marque esse projeto com uma estrela 🌟
 ## Checklist Features
 
 - Web API
-    - [ ] Deve atingir 100% de cobertura de código em testes
-    - [ ] Deve ter testes de integração validando todas as rotas da API
+    - [x] Deve atingir 100% de cobertura de código em testes
+    - [x] Deve ter testes de integração validando todas as rotas da API
     - [x] Deve entregar arquivos estáticos como Node.js Stream
     - [x] Deve entregar arquivos de música como Node.js Stream
     - [x] Dado um usuário desconectado, não deve quebrar a API
@@ -24,7 +24,7 @@ Marque esse projeto com uma estrela 🌟
         - [x] Deve reproduzir a transmissão
         - [x] Não deve pausar se algum efeito for adicionado
     - Controller
-        - [ ] Deve atingir 100% de cobertura de código em testes
+        - [x] Deve atingir 100% de cobertura de código em testes
         - [x] Deve poder iniciar ou parar uma transmissão 
         - [x] Deve enviar comandos para adicionar audio efeitos à uma transmissão
 

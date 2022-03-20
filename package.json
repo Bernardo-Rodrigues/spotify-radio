@@ -11,7 +11,6 @@
     "test:watch": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache --detectOpenHandles --watchAll",
     "test:coverage": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache --detectOpenHandles --coverage tests/unit",
     "test:e2e": "LOG_DISABLED=true NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --no-cache --detectOpenHandles tests/e2e",
-
     "live-reload:docker": "docker-compose up --build live-reload",
     "test:docker": "docker-compose up --build test",
     "test:watch:docker": "docker-compose up --build test-watch",
@@ -32,6 +31,7 @@
   },
   "homepage": "https://github.com/ErickWendel/semanajsexpert-spotify-template#readme",
   "devDependencies": {
+    "@types/node": "^17.0.21",
     "jest": "^27.5.1",
     "nodemon": "^2.0.15",
     "portfinder": "^1.0.28",
