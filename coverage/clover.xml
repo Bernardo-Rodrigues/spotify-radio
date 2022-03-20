@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1647714036283" clover="3.2.0">
-  <project timestamp="1647714036283" name="All files">
-    <metrics statements="116" coveredstatements="116" conditionals="34" coveredconditionals="34" methods="28" coveredmethods="28" elements="178" coveredelements="178" complexity="0" loc="116" ncloc="116" packages="2" files="6" classes="6"/>
+<coverage generated="1647720619509" clover="3.2.0">
+  <project timestamp="1647720619509" name="All files">
+    <metrics statements="128" coveredstatements="125" conditionals="37" coveredconditionals="37" methods="36" coveredmethods="33" elements="201" coveredelements="195" complexity="0" loc="128" ncloc="128" packages="3" files="7" classes="7"/>
+    <package name="public.controller.js">
+      <metrics statements="12" coveredstatements="9" conditionals="3" coveredconditionals="3" methods="8" coveredmethods="5"/>
+      <file name="view.js" path="/spotify-radio/public/controller/js/view.js">
+        <metrics statements="12" coveredstatements="9" conditionals="3" coveredconditionals="3" methods="8" coveredmethods="5"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+      </file>
+    </package>
     <package name="server">
       <metrics statements="104" coveredstatements="104" conditionals="34" coveredconditionals="34" methods="22" coveredmethods="22"/>
       <file name="config.js" path="/spotify-radio/server/config.js">
